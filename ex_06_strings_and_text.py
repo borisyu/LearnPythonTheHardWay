@@ -40,3 +40,11 @@ print "\r"
 w = "This is the left siade of..."
 e = "a string with a right side."
 print w + e
+print "\r"
+
+# 自己想到的例子
+hello = "hello"
+world = "world"
+words = hello, world # 字符串变量之间（字符串与字符串之间）用","号分隔，将返回一个tuple类型的变量
+print words # (hello, world)
+print "%s %s" % words # hello world
