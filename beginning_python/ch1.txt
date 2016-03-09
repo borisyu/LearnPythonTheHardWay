@@ -1,4 +1,4 @@
-整数相除
+简单的数字运算
 
 >>> 1 / 2
 0
@@ -8,3 +8,44 @@
 
 >>> 1 / 2.0
 0.5
+
+>>> -3 ** 2
+-9
+
+>>> (-3) ** 2
+9
+
+
+
+
+原始字符串
+
+>>> path = "C:\nowhere"
+>>> print path
+C:
+owhere
+
+对于以上情况，一种普遍的解决方法是使用转移
+
+>>> path = "C:\\nowhere"
+>>> print path
+C:\nowhere
+
+但是，如果路径很长，写法就有点麻烦，例如："C:\\windows\\system32\\drivers\\etc\\hosts"
+此时可以通过原始字符串输出
+
+>>> path = r"C:\windows\system32\drivers\etc\hosts"
+>>> print path
+C:\windows\system32\drivers\etc\hosts
+
+字符串前加上r，其实是给字符串做了一层转移操作
+>>> path = r"C:\windows\system32\drivers\etc\hosts"
+>>> path
+C:\\windows\\system32\\drivers\\etc\\hosts
+
+注意：原始字符串的内容不能以反斜线结尾
+>>> print r"C:\windows\"
+这样会报错
+如果需要反斜线结尾，可以通过字符串连接的方式来实现
+>>> print r"C:\windows" + "\\"
+C:\windows\
