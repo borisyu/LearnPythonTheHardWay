@@ -34,29 +34,44 @@ def convertDatetime():
 
     print month_name + ' ' + ordinal + ', ' + year
 
-convertDatetime()
+# convertDatetime()
 
 
 # Code list 2-3 序列（字符串）乘法示例
-def printBox():
-    sentence = raw_input("Sentence: ")
+def startSystem():
+    sys = raw_input("Type your system: ")
 
-    screen_width = 60
-    text_width = len(sentence)
+    screen_width = 30
+    text_width = len(sys)
     box_width = text_width + 4
     left_margin = (screen_width - box_width) // 2
 
-    print 'Screen Width:', screen_width
-    print 'Text Width:', text_width
-    print 'Box Width:', box_width
-    print 'Margin Left:', left_margin
-
     print
     print ' ' * left_margin + '#' + '=' * (box_width - 2) + '#'
     print ' ' * left_margin + '| ' + ' ' * text_width + ' |'
-    print ' ' * left_margin + '| ' + sentence + ' |'
+    print ' ' * left_margin + '| ' + sys + ' |'
     print ' ' * left_margin + '| ' + ' ' * text_width + ' |'
     print ' ' * left_margin + '#' + '=' * (box_width - 2) + '#'
     print
 
-printBox()
+startSystem()
+
+
+# Code list 2-4 成员资格检查
+def userLogin():
+    database = [
+        ['albert', '1234'],
+        ['smith', '7524'],
+        ['jones', '9843'],
+        ['boris', '1024'],
+        ['shawn', '9527']
+    ]
+    username = raw_input('User name: ')
+    pin = raw_input('PIN code: ')
+
+    if [username, pin] in database:
+        print 'Access granted!'
+    else:
+        print 'Access denied!'
+
+userLogin()
