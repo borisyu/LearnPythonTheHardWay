@@ -6,7 +6,7 @@
 # %s 字符串（采用str()的显示）
 # %r 字符串（采用repr()的显示）
 # %c 单个字符及ASCII码
-# %(name) 引用字典中的元素，name为字段元素名
+# %(name)s 引用字典中的元素，name为字段元素名
 # %b 二进制整数 b for binary
 # %o 八进制整数 o for octonary
 # %d 十进制整数 d for decimal
