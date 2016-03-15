@@ -54,7 +54,7 @@ def startSystem():
     print ' ' * left_margin + '#' + '=' * (box_width - 2) + '#'
     print
 
-startSystem()
+# startSystem()
 
 
 # Code list 2-4 成员资格检查
@@ -74,4 +74,17 @@ def userLogin():
     else:
         print 'Access denied!'
 
-userLogin()
+# userLogin()
+
+
+def down_sort(x, y):
+    if x > y:
+        return -1
+    elif x < y:
+        return 1
+    else:
+        return 0
+
+nums = [5, 2, 9, 7, 7]
+nums.sort(down_sort)
+print nums
