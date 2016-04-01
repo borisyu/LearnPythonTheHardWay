@@ -73,7 +73,6 @@ def fetch_hosts_content(hosts_urls):
 
     return content
 
-
 # 写入内容
 def write_hosts(content):
     if content == None:
