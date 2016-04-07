@@ -5,9 +5,12 @@
 如果同步后不存在 flask 目录，则手动执行以下步骤
 
 1. 安装 virtualenv
-2. 在 ./flask/Scripts/ 目录下安装 flask 包及相关包
+2. 初始化虚拟环境
+3. 在 ./flask/Scripts/ 目录下安装 flask 包及相关包
 
 'pip install virtualenv'
+
+'virtualenv flask'
 
 安装包
 - flask
