@@ -2,3 +2,4 @@
 .idea/
 projects/microblog/flask/
 projects/microblog/app.db
+projects/microblog/db_repository/
