@@ -9,7 +9,8 @@ app.config.update(dict(
     DEBUG = True,
     SECRET_KEY = 'development_key',
     USERNAME = 'admin',
-    PASSWORD = 'admin'
+    PASSWORD = 'admin',
+    SESSION_COOKIE_NAME = 'bb'
 ))
 app.config.from_envvar('FLASKR_SETTINGS', silent = True)
 
