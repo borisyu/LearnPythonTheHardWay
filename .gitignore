@@ -3,5 +3,8 @@
 projects/microblog/flask/
 projects/microblog/app.db
 projects/microblog/db_repository/
+
 projects/flaskr/venv/
 projects/flaskr/flaskr.db
+
+projects/flask_blueprint/venv
