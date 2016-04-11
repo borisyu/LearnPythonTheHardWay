@@ -1,10 +1,8 @@
-from flask import render_template
+from flask import render_template, request
 from . import app
 
 @app.route('/')
 def index():
-    return render_template('index.html')
-
-@app.route('/user/')
-def user_home():
-    return 'user home page'
+    user_agent = request.headers.get('User-Agent')
+    ip = request.headers.get('Remote-IP', None)
+    return render_template('index.html', ua=user_agent, ip=ip)

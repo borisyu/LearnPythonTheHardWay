@@ -4,7 +4,7 @@ from flask import render_template
 from . import user
 
 @user.route('/')
-def index():
+def home():
     return render_template('home.html')
 
 @user.route('/resume')

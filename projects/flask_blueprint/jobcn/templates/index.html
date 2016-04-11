@@ -6,5 +6,9 @@
 </head>
 <body>
     <h1>Jobcn Home Page</h1>
+    <ul>
+        {% if ua %}<li>{{ua}}</li>{% endif %}
+        {% if ip %}<li>{{ip}}</li>{% endif %}
+    </ul>
 </body>
 </html>
