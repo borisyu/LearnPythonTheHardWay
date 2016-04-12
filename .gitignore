@@ -4,7 +4,6 @@ projects/microblog/flask/
 projects/microblog/app.db
 projects/microblog/db_repository/
 
-projects/flaskr/venv/
-projects/flaskr/flaskr.db
+projects/flasky/venv/
 
 projects/flask_blueprint/venv
